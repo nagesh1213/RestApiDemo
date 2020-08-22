@@ -12,13 +12,12 @@ import com.rest.api.service.TestServiceInter;
 @RestController
 public class HomeController {
 	
-	private static final AtomicInteger counter = new AtomicInteger();
 	
 	@Autowired
 	private TestServiceInter testServiceInter;
 	
 	@PostMapping("/counter")
 	public ResponseEntity<?> counter(){
-		return ResponseEntity.ok().body(testServiceInter.testCount(counter.incrementAndGet()));
+		return ResponseEntity.ok().body(testServiceInter.testCount());
 	}
 }

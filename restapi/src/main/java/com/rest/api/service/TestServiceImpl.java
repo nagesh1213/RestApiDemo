@@ -12,8 +12,8 @@ public class TestServiceImpl implements TestServiceInter{
 	private TestDaoInter testDaoInter;
 	
 
-	public String testCount(int i) {
-		return testDaoInter.testCount(i);
+	public String testCount() {
+		return testDaoInter.testCount();
 	}
 
 }

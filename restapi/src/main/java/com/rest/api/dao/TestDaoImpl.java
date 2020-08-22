@@ -14,11 +14,10 @@ public class TestDaoImpl implements TestDaoInter {
 	private SessionFactory sessionFactory;
 
 
-	public String testCount(int i) {
-		String qry = "update TestEntity t set t.count= :counter where t.id = :id";
+	public String testCount() {
+		String qry = "update testentity te set te.count = te.count+1 where te.id = :id";
 		try{
-			sessionFactory
-			.getCurrentSession().createQuery(qry).setParameter("counter", i).setParameter("id", 1L).executeUpdate();
+			sessionFactory.getCurrentSession().createSQLQuery(qry).setParameter("id", 1L).executeUpdate();
 			return "success";
 		}catch(Exception ex) {		
 			ex.printStackTrace();			
