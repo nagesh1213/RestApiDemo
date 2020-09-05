@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-security-oauth2
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Nagesh
+Implementation-Vendor-Id: com.spring.security.oauth2
+Build-Jdk: 1.8.0_181
+Implementation-URL: http://projects.spring.io/spring-boot/spring-secur
+ ity-oauth2/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
