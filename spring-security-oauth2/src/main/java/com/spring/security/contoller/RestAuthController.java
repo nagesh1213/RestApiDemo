@@ -53,7 +53,7 @@ public class RestAuthController {
 		if("ENABLED".equals(jsonResponse.getString("status"))) {
 			userService.saveResponse(jsonResponse.toString());
 			log.info("Api Success Response: "+jsonResponse.toString());
-			return new ApiResponse(HttpStatus.OK, "Success", jsonResponse);
+			return new ApiResponse(HttpStatus.OK, "Success", jsonResponse.toString());
 		}else {
 			log.info("Api Error Response: "+jsonResponse.toString());
 			return new ApiResponse(HttpStatus.OK,"",jsonResponse);
