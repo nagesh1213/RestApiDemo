@@ -1,5 +1,6 @@
 package com.spring.security.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,6 +14,7 @@ public class ApiResponseEntity{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
+	@Column(columnDefinition="TEXT")
 	private String response;
 
 	public Long getId() {
